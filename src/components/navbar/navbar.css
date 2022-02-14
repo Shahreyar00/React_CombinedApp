@@ -1,0 +1,149 @@
+.navbar{
+    flex: 15%;
+    min-height: 100vh;
+    position: static;
+    top: 0;
+    left: 0;
+    background-color: #111827;
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5 ease-in-out;
+}
+
+.navbar-top,
+.navbar-center,
+.navbar-bottom{
+    width: 90%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #4b4b4b;
+}
+
+.navbar-bottom{
+    border: none;
+    justify-content: center;
+}
+
+.logo{
+    font-size: 44px;
+    margin-right: 6px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.brand{
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.list{
+    list-style: none;
+    width: 100%;
+}
+
+.list-item{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.list-item-icon{
+    width: 30px;
+    font-size: 20px;
+}
+
+.list-item:hover,
+.list-item.active{
+    background-color: #374151;
+    color: white;
+}
+
+.navbar-bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.username{
+    background-color:#111827;
+    color: white;
+    border: 1px solid white;
+}
+
+.login{
+    padding: 10px 30px;
+}
+
+.login:hover{
+    background-color: rgb(99, 206, 99);
+    color: white;
+}
+
+.logout{
+    padding: 10px 25px;
+}
+
+.logout:hover{
+    background-color: rgb(209, 65, 65);
+}
+
+@media only screen and (max-width: 768px){
+    .navbar{
+        flex: 5%;
+        height: 100vh;
+    }
+    .brand, .list-item-text{
+        display: none;
+    }
+
+    .btn-text{
+        display: none;
+    }
+
+    .login{
+        width: 20px;
+        height: 20px;
+        padding: 0 0;
+        background-color: rgb(99, 206, 99);
+    }
+
+    .username{
+        /* width: 20px;
+        height: 20px;
+        padding: 0 0; */
+        display: none;
+    }
+
+    .logout{
+        width: 20px;
+        height: 20px;
+        padding: 0 0;
+        background-color: rgb(209, 65, 65);
+    }
+
+    .login:hover{
+        background-color: green;
+    }
+
+    .logout:hover{
+        background-color: red;
+    }
+}
+
+

@@ -1,0 +1,81 @@
+.home{
+    flex: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.home-heading{
+    padding: 5px 60px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #111827;
+    color: white;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.post{
+    width: 800px;
+    height: auto;
+    max-height: 600px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.24);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.postHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title{
+    flex: 50%;
+    font-size: 16px;
+}
+
+.deletePost{
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.home-btn{
+    background-color:#c8c8c9;
+    color: rgb(209, 65, 65);
+    cursor: pointer;
+}
+
+.postTextContainer{
+    word-wrap: break-word;
+    height: auto;
+    max-height: 400px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    font-size: 18px;
+}
+
+.post-author{
+    margin-top: 10px;
+    background-color: #c8c8c9;
+    color: black;
+}
+
+@media only screen and (max-width: 768px){
+    .post{
+        width: 400px;
+    }
+
+    .home-heading{
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+}
+
+

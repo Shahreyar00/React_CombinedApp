@@ -1,0 +1,88 @@
+.createPost{
+    flex: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cpContainer{
+    width: 600px;
+    height: auto;
+    padding: 20px;
+    background-color: #111827;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cpContainer h1{
+    text-align: center;
+}
+
+.cpContainer label{
+    font-size: 25px;
+}
+
+.cpContainer .inputGp{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGp input,
+.inputGp textarea {
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    background-color: #374151;
+    color: white;
+}
+
+.inputGp input {
+    height: 40px;
+}
+
+.inputGp input:focus,
+.inputGp textarea:focus{
+    outline: none;
+}
+.inputGp textarea {
+    height: 180px;
+    resize: none;
+}
+
+.btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cpContainer button {   
+    width: 140px;
+    margin-top: 20px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b5b8bd;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+}
+
+.cpContainer button:hover{
+    background-color: rgb(99, 206, 99);
+    color: white;
+}
+
+@media only screen and (max-width:768px){
+    .cpContainer{
+        width: 300px;
+    }
+}
+
+
